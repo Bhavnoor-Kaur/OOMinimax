@@ -1,0 +1,40 @@
+---------------------------------------------------
+| Name: Bhavnoor Kaur
+| Student ID: 1623727
+| CMPUT 274, Fall 2020
+| 
+| Weekly Exercise 6: OO Minimax
+----------------------------------------------------
+Included Files:
+* oominimax.py
+* README
+* debugger.png
+* submit.git.log.txt
+
+Notes and Assumptions:
+
+- submit.git.log.txt: This file contains the git commits of the changes made.
+- debugger.png: Contains a screenshot of the debugger conatains the stack frames
+                in the call stack.
+- oominimax.py: This file contains the oo - version of the minimax.py provided
+                It contains the following classes and the functions:
+
+                class State: This class contains the methods - render, wins, evaluate,
+                             game_over, empty_cells, get_depth, valid_move and set_move.
+                             This class sets the board for the play and checks for valid moves
+                             and sets the move based on the co-ordinated passed into them. This
+                             function also keeps track of the empty cells on the board to check
+                             for valid moves and evaluates if the game is over or not.
+                
+                class Play: This class contains the methods - ai_turn and human_turn which
+                            plays the computer turn and the human turn by setting the move
+                            for a valid move in an empty cell on the board. The ai_turn uses
+                            the function minimax to decide the best move.
+
+                minimax: This is an AI function which choses the best ove for the computer turn
+                         It returns the best move which in turn is taken by the ai turn to play
+                         the game
+                
+                main: Main function calls all the methods from different classes and functions to
+                      run the game, it also takes cares of the possible errors and prints out error
+                      statement to indicate that to the user.
